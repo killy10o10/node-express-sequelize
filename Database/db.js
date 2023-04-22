@@ -13,7 +13,7 @@ const debug = util.debuglog('db')
 const db = {};
 
 //Database setup and configurations
-db.sequelize = new Sequelize(DB_NAME, DB_USERNAME, DB_PASSWORD, {
+db.sequelize = new Sequelize( DB_NAME, DB_USERNAME, DB_PASSWORD, {
   host: "localhost",
   dialect: "mysql",
   logging:(mesage)=>{debug(mesage)}

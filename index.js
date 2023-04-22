@@ -6,7 +6,8 @@
 const express = require("express");
 const cookieParser = require("cookie-parser");
 require("dotenv").config();
-const { PORT, SESSION_SECRET } = process.env;
+const PORT = process.env.PORT || 3000;
+const SESSION_SECRET = process.env.SESSION_SECRET || 'mysecretstring';
 const path = require("path");
 const router = require("./routes/routes");
 const db = require("./Database/db");
